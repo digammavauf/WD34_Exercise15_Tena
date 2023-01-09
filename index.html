@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Basics</title>
+    </head>
+    <body>
+        <h1>This is a sample html</h1>
+        <p id="para1" onmouseover="this.innerHTML='You hovered'" onmouseout="this.innerHTML='You move your mouse out'">Please change me</p>
+        <button onclick="alert('The button is clicked')">Click Me!</button>
+        <br>
+        <textarea onkeydown="alert('down')" onkeypress="alert('press')" onkeyup="alert('up')"></textarea>
+        <p>First Number</p>
+        <h1 id="firstNumber">24 or <input type="number" id="firstNum"></h1>
+        <p>Second Number</p>
+        <h1 id="secondNumber">10 or <input type="number" id="secondNum"></h1>
+        <button onclick="Adding2Numbers()">Addition</button>
+        <button onclick="alert(Subtracting2Numbers())">Subtraction</button>
+        <button onclick="Multiplying2Numbers()">Multiplication</button>
+        <button onclick="Dividing2Numbers()">Division (use input)</button>
+        <p>Result:</p>
+        <h1 id="result"></h1>
+    </body>
+    <!-- <script>
+        alert("Hello World");
+    </script> -->
+    <script src="js/main.js"></script>
+</html>
