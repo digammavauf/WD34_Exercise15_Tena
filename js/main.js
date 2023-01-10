@@ -38,16 +38,35 @@ function Subtracting2Numbers() {
 }
 
 let Multiplying2Numbers = () => {
-    let firstNumber = parseFloat(document.getElementById("firstNumber").innerHTML);
-    let secondNumber = parseFloat(document.getElementById("secondNumber").innerHTML);
+    let firstNumber = Number(document.getElementById("firstNumber").innerHTML);
+    let secondNumber = Number(document.getElementById("secondNumber").innerHTML);
     let product = firstNumber * secondNumber;
     alert(product);
 }
 
-function Dividing2Numbers() {
-    let firstNumber = parseFloat(document.getElementById("firstNum").value);
-    let secondNumber = parseFloat(document.getElementById("secondNum").value);
+const Dividing2Numbers = () => {
+    let firstNumber = Number(document.getElementById("firstNum").value);
+    let secondNumber = Number(document.getElementById("secondNum").value);
     let dividend = firstNumber / secondNumber;
     document.getElementById("result").innerHTML=dividend;
 }
 
+ExponentiateAB = () => {
+    let firstNumber = Number(document.getElementsByClassName("numbers")[0].value);
+    let secondNumber = Number(document.getElementsByClassName("numbers")[1].value);
+    let result = firstNumber ** secondNumber;
+    document.getElementById("result").innerHTML=result;
+}
+
+Modulo2Numbers = () => {
+    let firstNumber = Number(document.getElementsByTagName("input")[0].getAttribute("value"));
+    let secondNumber = Number(document.getElementsByTagName("input")[1].getAttribute("value"));
+    let result = firstNumber % secondNumber;
+    document.getElementById("result").innerHTML=result;
+}
+
+IncreaseBy1 = () => {
+    let firstNumber = Number(document.getElementsByName("firstNo")[0].getAttribute("value"));
+    let result = firstNumber++;
+    document.getElementById("result").innerHTML=result;
+}

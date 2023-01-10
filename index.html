@@ -13,13 +13,18 @@
         <br>
         <textarea onkeydown="alert('down')" onkeypress="alert('press')" onkeyup="alert('up')"></textarea>
         <p>First Number</p>
-        <h1 id="firstNumber">24 or <input type="number" id="firstNum"></h1>
+        <h1 id="firstNumber">24</h1> or <input type="number" id="firstNum" name="firstNo" class="numbers" value="4">
         <p>Second Number</p>
-        <h1 id="secondNumber">10 or <input type="number" id="secondNum"></h1>
+        <h1 id="secondNumber">10</h1> or <input type="number" id="secondNum" class="numbers" value="3">
+        <br>
         <button onclick="Adding2Numbers()">Addition</button>
         <button onclick="alert(Subtracting2Numbers())">Subtraction</button>
         <button onclick="Multiplying2Numbers()">Multiplication</button>
         <button onclick="Dividing2Numbers()">Division (use input)</button>
+        <button onclick="ExponentiateAB()">Exponentiate A^B (use input)</button>
+        <button onclick="Modulo2Numbers()">Remainder A%B (use input)</button>
+        <button onclick="IncreaseBy1()">Increase A+1 (use input 1)</button>
+        <button onclick="DecreaseBy1()">Decrease A+1 (use input 1)</button>
         <p>Result:</p>
         <h1 id="result"></h1>
     </body>
